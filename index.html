@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div {
+            margin-left: 5px;
+            background-color: #96afdd;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador - Receber Clientes da Filial </title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="input-group=addon">
+
+        <h1>PARA GERAR A OPÇÃO 03 VOCE PRECISA ESCOLHER:</h1>
+        <h3>Filiais que fizeram o fechamento</h3>
+        <input type="checkbox" id="REC" name="filial" value="0001">
+        <label for="REC"> 0001-REC</label>
+        <input type="checkbox" id="SAO" name="filial" value="0002">
+        <label for="SAO"> 0002-SAO</label>
+        <input type="checkbox" id="SSA" name="filial" value="0004">
+        <label for="SSA"> 0004-SSA</label>
+        <input type="checkbox" id="AJU" name="filial" value="0005">
+        <label for="AJU"> 0005-AJU</label>
+        <input type="checkbox" id="QBX" name="filial" value="0006">
+        <label for="QBX"> 0006-QBX</label>
+        <input type="checkbox" id="NAT" name="filial" value="0008">
+        <label for="NAT"> 0008-NAT</label>
+        <input type="checkbox" id="JPA" name="filial" value="0009">
+        <label for="JPA"> 0009-JPA</label>
+        <input type="checkbox" id="BEL" name="filial" value="0010">
+        <label for="BEL"> 0010-BEL</label>
+        <input type="checkbox" id="MCZ" name="filial" value="0011">
+        <label for="MCZ"> 0011-MCZ</label>
+        <input type="checkbox" id="CPV" name="filial" value="0012">
+        <label for="CPV"> 0012-CPV</label><br>
+        <input type="checkbox" id="BHZ" name="filial" value="0014">
+        <label for="BHZ"> 0014-BHZ</label>
+        <input type="checkbox" id="SLZ" name="filial" value="0015">
+        <label for="SLZ"> 0015-SLZ</label>
+        <input type="checkbox" id="THE" name="filial" value="0016">
+        <label for="THE"> 0016-THE</label>
+        <input type="checkbox" id="UDI" name="filial" value="0017">
+        <label for="UDI"> 0017-UDI</label>
+        <input type="checkbox" id="CJZ" name="filial" value="0019">
+        <label for="CJZ"> 0019-CJZ</label>
+        <input type="checkbox" id="JDO" name="filial" value="0020">
+        <label for="JDO"> 0020-JDO</label>
+        <input type="checkbox" id="FES" name="filial" value="0021">
+        <label for="FES"> 0021-FES</label>
+        <input type="checkbox" id="IMP" name="filial" value="0022">
+        <label for="IMP"> 0022-IMP</label>
+        <input type="checkbox" id="PNZ" name="filial" value="0023">
+        <label for="PNZ"> 0023-PNZ</label>
+        <input type="checkbox" id="MAO" name="filial" value="0024">
+        <label for="MAO"> 0024-MAO</label><br>
+        <input type="checkbox" id="TXF" name="filial" value="0026">
+        <label for="TXF"> 0026-TXF</label>
+        <input type="checkbox" id="MTB" name="filial" value="0029">
+        <label for="MTB"> 0029-MTB</label>
+        <input type="checkbox" id="GRP" name="filial" value="0030">
+        <label for="GRP"> 0030-GRP</label>
+        <input type="checkbox" id="ITN" name="filial" value="0031">
+        <label for="ITN"> 0031-ITN</label>
+        <input type="checkbox" id="CPQ" name="filial" value="0032">
+        <label for="CPQ"> 0032-CPQ</label>
+        <input type="checkbox" id="BSB" name="filial" value="0034">
+        <label for="BSB"> 0034-BSB</label>
+        <input type="checkbox" id="BNU" name="filial" value="0036">
+        <label for="BNU"> 0036-BNU</label>
+        <input type="checkbox" id="RAO" name="filial" value="0038">
+        <label for="RAO"> 0038-RAO</label>
+        <input type="checkbox" id="PPY" name="filial" value="0039">
+        <label for="PPY"> 0039-PPY</label>
+        <input type="checkbox" id="SFO" name="filial" value="0041">
+        <label for="SFO"> 0041-SFO</label><br>
+        <input type="checkbox" id="PMW" name="filial" value="0042">
+        <label for="PMW"> 0042-PMW</label>
+        <input type="checkbox" id="GYN" name="filial" value="0043">
+        <label for="GYN"> 0043-GYN</label>
+        <input type="checkbox" id="SAG" name="filial" value="0044">
+        <label for="SAG"> 0044-SAG</label>
+        <input type="checkbox" id="BRA" name="filial" value="0045">
+        <label for="BRA"> 0045-BRA</label>
+        <input type="checkbox" id="PIC" name="filial" value="0046">
+        <label for="PIC"> 0046-PIC</label>
+        <input type="checkbox" id="SBJ" name="filial" value="0047">
+        <label for="SBJ"> 0047-SBJ</label>
+        <input type="checkbox" id="FTZ" name="filial" value="0049">
+        <label for="FTZ"> 0049-FTZ</label>
+        <input type="checkbox" id="CAR" name="filial" value="0051">
+        <label for="CAR"> 0051-CAR</label>
+        <input type="checkbox" id="MVF" name="filial" value="0052">
+        <label for="MVF"> 0052-MVF</label>
+        <input type="checkbox" id="CXJ" name="filial" value="0053">
+        <label for="CXJ"> 0053-CXJ</label><br>
+        <input type="checkbox" id="GVR" name="filial" value="0054">
+        <label for="GVR"> 0054-GVR</label>
+        <input type="checkbox" id="FLN" name="filial" value="0055">
+        <label for="FLN"> 0055-FLN</label>
+        <input type="checkbox" id="JOI" name="filial" value="0056">
+        <label for="JOI"> 0056-JOI</label>
+        <input type="checkbox" id="MOC" name="filial" value="0057">
+        <label for="MOC"> 0057-MOC</label>
+        <input type="checkbox" id="BEX" name="filial" value="0058">
+        <label for="BEX"> 0058-BEX</label>
+        <input type="checkbox" id="CAS" name="filial" value="0059">
+        <label for="CAS"> 0059-CAS</label>
+        <input type="checkbox" id="ENP" name="filial" value="0060">
+        <label for="ENP"> 0060-ENP</label>
+        <input type="checkbox" id="STI" name="filial" value="0063">
+        <label for="STI"> 0063-STI</label>
+        <input type="checkbox" id="AIR" name="filial" value="0064">
+        <label for="AIR"> 0064-AIR</label>
+        <input type="checkbox" id="LDB" name="filial" value="0065">
+        <label for="LDB"> 0065-LDB</label><br>
+        <input type="checkbox" id="NVT" name="filial" value="0066">
+        <label for="NVT"> 0066-NVT</label>
+        <input type="checkbox" id="GAH" name="filial" value="0067">
+        <label for="GAH"> 0067-GAH</label>
+        <input type="checkbox" id="SJP" name="filial" value="0069">
+        <label for="SJP"> 0069-SJP</label>
+        <input type="checkbox" id="PAE" name="filial" value="0073">
+        <label for="PAE"> 0073-PAE</label>
+        <input type="checkbox" id="VCA" name="filial" value="0084">
+        <label for="VCA"> 0084-VCA</label>
+        <input type="checkbox" id="RSS" name="filial" value="0085">
+        <label for="RSS"> 0085-RSS</label>
+        <input type="checkbox" id="RJO" name="filial" value="0087">
+        <label for="RJO"> 0087-RJO</label>
+        <input type="checkbox" id="CWF" name="filial" value="0091">
+        <label for="CWF"> 0091-CWF</label>
+        <input type="checkbox" id="VIT" name="filial" value="0092">
+        <label for="VIT"> 0092-VIT</label>
+        <input type="checkbox" id="CJR" name="filial" value="0093">
+        <label for="CJR"> 0093-CJR</label><br>
+
+        <h3>Qual dia da semana?</h3>
+
+        <input type="radio" name="diaDaSemana" id="segunda" value="1">
+        <label for="segunda">Segunda</label>
+        <input type="radio" name="diaDaSemana" id="terca" value="2">
+        <label for="terca">Terça</label>
+        <input type="radio" name="diaDaSemana" id="quarta" value="3">
+        <label for="quarta">Quarta</label>
+        <input type="radio" name="diaDaSemana" id="quinta" value="4">
+        <label for="quinta">Quinta</label>
+        <input type="radio" name="diaDaSemana" id="sexta" value="5">
+        <label for="sexta">Sexta</label>
+        <input type="radio" name="diaDaSemana" id="sabado" value="6">
+        <label for="sabado">Sábado</label>
+        <input type="radio" name="diaDaSemana" id="domingo" value="7">
+        <label for="domingo">Domingo</label>
+        <input type="radio" name="diaDaSemana" id="Generico" value="9">
+        <label for="Generico">DIA 9</label>
+
+        <br>
+        <br>
+
+        <button class="btn btn-primary" onclick="gerador()">Gerar</button>
+    
+        <div id="res"></div>
+        <br>
+        <button class="btn btn-primary" onclick="copy()">Copiar Script</button>
+    </div>
+    
+
+        
+    
+
+
+    
+</body>
+
+</html>
